@@ -47,8 +47,9 @@ const Map = ({ searchResults }) => {
                     </Marker>
 
                     {/* popup that should show if we click on a marker */}
-                    {selectedLocation.long === result.long ? (
+                    {/* {selectedLocation.long === result.long ? (
                         <Popup
+                            className="dark:bg-[#232626] dark:text-white"
                             onClose={() => setSelectedLocation({})}
                             closeOnClick={true}
                             latitude={result.lat}
@@ -56,7 +57,7 @@ const Map = ({ searchResults }) => {
                         >
                             {result.title}
                         </Popup>
-                    ) : false}
+                    ) : false} */}
 
                 </div>
             ))}
